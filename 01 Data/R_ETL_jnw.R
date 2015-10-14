@@ -81,7 +81,7 @@ if( length(NewYork_measures) > 1 || ! is.na(NewYork_measures)) {
   }
 }
 
-write.csv(NewYork, paste(gsub(".csv", "", file_path), ".reformatted.csv", sep=""), row.names=FALSE, na = "")
+write.csv(NewYork, paste(gsub(".csv", "", file_path2), ".reformatted.csv", sep=""), row.names=FALSE, na = "")
 
 tableName <- gsub(" +", "_", gsub("[^A-z, 0-9, ]", "", gsub(".csv", "", file_path2)))
 sql <- paste("CREATE TABLE", tableName, "(\n-- Change table_name to the table name you want.\n")
