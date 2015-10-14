@@ -60,7 +60,7 @@ NewYork <- read.csv(file_path2, stringsAsFactors = FALSE)
 
 #str(NewYork)
 
-NewYork_measures <- c("Year", "Count", "Percent")
+NewYork_measures <- c("YEAR", "COUNT", "PERCENT")
 
 NY_dimensions <- setdiff(names(NewYork), NewYork_measures)
 if( length(NewYork_measures) > 1 || ! is.na(NY_dimensions)) {
