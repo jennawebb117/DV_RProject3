@@ -1,0 +1,25 @@
+---
+title: "Causes of Death in France and New York"
+author: "Charles Martinez (cmm5627), Happy Situ (hys82), Jenna Webb (jnw653)"
+date: "October 14, 2015"
+output: html_document
+---
+
+For this project, we found two different data sets, each representing different causes of death in New York and France. We then used various methods to join the two data sets and then displayed interesting plots about them.  
+
+This is the code that we used to be able to put the data into an Oracle database:
+
+```{r}
+source("../01 Data/R_ETL.R", echo = TRUE)
+```
+
+Here is a summary of our data:
+```{r, echo = FALSE}
+source("../01 Data/Death_jnw.R")
+```
+```{r}
+summary(df_France)
+summary(df_NewYork)
+```
+
+And here is a summary after an inner join:
