@@ -22,4 +22,9 @@ summary(df_France)
 summary(df_NewYork)
 ```
 
-And here is a summary after an inner join:
+Here is a summary after an inner join:
+
+An outer join:
+
+And a full join:
+
