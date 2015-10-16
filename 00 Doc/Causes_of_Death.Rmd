@@ -7,7 +7,7 @@ output: html_document
 
 For this project we found two different data sets--each representing different causes of death in New York and France. We then used various methods to join the two data sets and then displayed interesting plots about them.  
 
-This is the code that we used to be able to put the data into an Oracle database:  
+####This is the code that we used to be able to put the data into an Oracle database:  
 
 ```
 require(tidyr)
@@ -112,7 +112,7 @@ sql <- paste(sql, ");")
 cat(sql)
 ```
 
-Here is a summary of our data:  
+####Here is a summary of our data:  
 ```{r}
 source("../01 Data/Death_jnw.R", echo = FALSE)
 ```
@@ -122,22 +122,24 @@ summary(df_France)
 summary(df_NewYork)
 ```
 
-Here is a summary and a subset after an inner join:  
+####Here is a summary and a subset after an inner join:  
 
-An outer join:  
+####An outer join:  
 
-And a full join:  
+####And a full join:  
 ```{r}
 summary(df_full)
 head(df_full)
 ```
   
 ###Plot 1:  
+  
+###Plot 2:  
+  
+###Plots 3 & 4:  
 ```{r}
 source("../02 Data Wrangling/full_data_wrangle.R", echo = TRUE)
 ```
   
-###Plot 2:  
-  
-###Plot 3:  
+In the preceding plots, the suicide rates were looked at for both France and New York for the years from 2007-2008. For France, it seems that males tended to have a higher suicide rate tahn females, and it also seems that there were few suicides in the middle of the year. For New York, the deaths tended to be more consistent throughout the year, but again males had a higher suicide rate than females.  
   
