@@ -131,3 +131,13 @@ And a full join:
 summary(df_full)
 head(df_full)
 ```
+  
+###Plot 1:  
+```{r}
+source("../02 Data Wrangling/full_data_wrangle.R", echo = TRUE)
+```
+  
+###Plot 2:  
+  
+###Plot 3:  
+  
