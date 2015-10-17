@@ -126,7 +126,10 @@ summary(df_NewYork)
 ```
 innerj <- dplyr::inner_join(dfFrance, dfNYC, by="YEAR")
 ```
-
+```{r}
+summary(innerj)
+head(innerj)
+```
 
 ####A bind and its code:  
 
@@ -149,6 +152,7 @@ head(df_bind)
 ```
 df_full <- dplyr::full_join(df_France, df_NewYork, by="YEAR")
 ```
+
 
 ```{r}
 summary(df_bind)
