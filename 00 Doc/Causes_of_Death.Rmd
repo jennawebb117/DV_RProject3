@@ -123,6 +123,10 @@ summary(df_NewYork)
 ```
 
 ####Here is a summary and a subset after an inner join, and the code that was used to join:
+```{r}
+source("../02 Data Wrangling/InnerJoin.R", echo = FALSE)
+```
+
 ```
 innerj <- dplyr::inner_join(dfFrance, dfNYC, by="YEAR")
 ```
@@ -152,7 +156,6 @@ head(df_bind)
 ```
 df_full <- dplyr::full_join(df_France, df_NewYork, by="YEAR")
 ```
-
 
 ```{r}
 summary(df_bind)
