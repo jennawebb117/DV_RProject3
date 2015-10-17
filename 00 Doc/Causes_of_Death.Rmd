@@ -165,6 +165,7 @@ head(df_full)
 source("../02 Data Wrangling/InnerJoin.R", echo = TRUE)
 ```
 
+Plot 1 shows that the number of male deaths due to homicide in France have been strictly higher in the years 2007 and 2008. Plot 2 does not have this stict relation, and from 2007 to 2008 New York City's count for homicides is pretty much the same. In plot 1 the number of males death in France increased from 2007 to 2008.
   
 ###Plot 3:  
 ```{r}
