@@ -190,4 +190,4 @@ source("../02 Data Wrangling/full_data_wrangle.R", echo = TRUE)
 ```
   
 In the preceding plots, the suicide rates were looked at for both France and New York for the years from 2007-2008. For France, it seems that males tended to have a higher suicide rate tahn females, and it also seems that there were few suicides in the middle of the year. For New York, the deaths tended to be more consistent throughout the year, but again males had a higher suicide rate than females.  
-  
+    
