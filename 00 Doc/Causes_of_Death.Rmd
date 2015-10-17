@@ -162,7 +162,7 @@ source("../02 Data Wrangling/InnerJoin.R", echo = TRUE)
 source("../02 Data Wrangling/Left_Join_Wrangle.R", echo = TRUE)
 ```
 
-The plot above shows the 
+The plot above compares the number of accidental deaths by sex in New York and France. What is interesting about this graph is that it offers a visualization that provides the viewer with eight possible comparisons. So, one can compare the number of accidental deaths between males in both France and New York as well as the number of accidental deaths between males and females only in New York or in France. The data was chosen by inquiry into which location offered more of a risk of death due to accident. From the data, one could assert that males who live in New york are more likely to die from an accident than males in France. This could be due to the density of the population in urban location. Additionally, one could also posit that females in France and New York, in general, are less likely to die from accidents than males from both France and New York. 
 
 ###Plots 4 & 5:  
 ```{r}
