@@ -5,6 +5,7 @@ date: "October 14, 2015"
 output: html_document
 ---
 
+
 For this project we found two different data sets--each representing different causes of death in New York and France. We then used various methods to join the two data sets and then displayed interesting plots about them.  
 
 ####This is the code that we used to be able to put the data into an Oracle database:  
