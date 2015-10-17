@@ -122,7 +122,11 @@ summary(df_France)
 summary(df_NewYork)
 ```
 
-####Here is a summary and a subset after an inner join, and the code that was used to join:   
+####Here is a summary and a subset after an inner join, and the code that was used to join:
+```
+innerj <- dplyr::inner_join(dfFrance, dfNYC, by="YEAR")
+```
+
 
 ####A bind and its code:  
 ```
@@ -147,16 +151,20 @@ summary(df_full)
 head(df_full)
 ```
   
-###Plot 1:  
+###Plot 1 & 2:
+```{r}
+source("../02 Data Wrangling/InnerJoin.R", echo = TRUE)
+```
+
   
-###Plot 2:  
+###Plot 3:  
 ```{r}
 source("../02 Data Wrangling/Left_Join_Wrangle.R", echo = TRUE)
 ```
 
 The plot above shows the 
 
-###Plots 3 & 4:  
+###Plots 4 & 5:  
 ```{r}
 source("../02 Data Wrangling/full_data_wrangle.R", echo = TRUE)
 ```
