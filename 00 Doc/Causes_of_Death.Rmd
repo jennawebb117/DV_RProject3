@@ -129,11 +129,20 @@ innerj <- dplyr::inner_join(dfFrance, dfNYC, by="YEAR")
 
 
 ####A bind and its code:  
+
+```{r}
+source("../01 Data/Death_cmm.R", echo = FALSE)
+```
+
 ```
 df_bind <- dplyr::left_join(df_NewYorkDeaths,df_FranceDeaths,by="YEAR") 
 df_bind <- dplyr::distinct(df_bind)
 df_bind <- dplyr::rename(df_bind, NY_SEX = SEX.x)
 df_bind <- dplyr::rename(df_bind, FRANCE_SEX = SEX.y)
+```
+```{r}
+summary(df_bind)
+head(df_bind)
 ```
 
 ####And a full join, as well as its code:  
@@ -151,7 +160,7 @@ summary(df_full)
 head(df_full)
 ```
   
-###Plot 1 & 2:
+###Plots 1 & 2:
 ```{r}
 source("../02 Data Wrangling/InnerJoin.R", echo = TRUE)
 ```
