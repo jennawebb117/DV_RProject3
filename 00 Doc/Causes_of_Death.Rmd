@@ -124,12 +124,24 @@ summary(df_NewYork)
 
 ####Here is a summary and a subset after an inner join, and the code that was used to join:   
 
-####An outer join and its code:  
+####A bind and its code:  
+```
+df_bind <- dplyr::left_join(df_NewYorkDeaths,df_FranceDeaths,by="YEAR") 
+df_bind <- dplyr::distinct(df_bind)
+df_bind <- dplyr::rename(df_bind, NY_SEX = SEX.x)
+df_bind <- dplyr::rename(df_bind, FRANCE_SEX = SEX.y)
+```
 
-####And a full join, as well as its code:
+####And a full join, as well as its code:  
 ```
 df_full <- dplyr::full_join(df_France, df_NewYork, by="YEAR")
 ```
+
+```{r}
+summary(df_bind)
+head(df_bind)
+```
+
 ```{r}
 summary(df_full)
 head(df_full)
